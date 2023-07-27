@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Agency</title>
+    
+    <style>
+      body{
+        font-family: "Poppins",sans-serif;
+        margin: 50px 50px 0px 50px;
+        background-color: #faf9f6;
+        display: flex;
+        flex-direction: column;
+        min-height: 95vh;
+      }
+      
+      .main{
+        flex: 1;
+      }
+      
+      h1{
+        font-size: 5rem;
+      }
+      
+      footer{
+        text-align: right;
+        color: midnightblue;
+      }
+      
+      .tile-image{
+        height: 200px;
+        float: left;
+        margin-right: 50px;
+      }
+      
+      .card{
+        width: 50%;
+      }
+      
+      .left{
+        float: left;
+      }
+      
+      .right{
+        float: right;
+      }
+      
+      .creative{
+        color: midnightblue;
+      }
+      
+      @media screen and (max-width: 680px){
+        .logo{
+          width: 10px;
+          height: 10px;
+        }
+      }
+      
+      h1{
+        font-size: 3.5rem;
+        text-align: center;
+      }
+      
+      .card{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+      
+      .card-image{
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+      }
+      
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <div class="main">
+      <img class="logo" src="data:image/png;base64,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">
+      <h1>We are a Creative Design Agency</h1>
+      <div class="left card"><img class="tile-image" src="https://assets.awwwards.com/awards/submissions/2020/09/5f5faa37e46ea485553805.png">
+        <h2 class="card-title">Beauty</h2>
+        <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you to design and develop an amazing website for your business.</p>
+      </div>
+      
+      <div class="right-card"><img class="tile-image" src="https://media.istockphoto.com/id/931042070/vector/website-construction-line-style-illustration.jpg?s=612x612&w=0&k=20&c=nEB37_J5y3j08MKqhAGlgK7OmBwPFoEsU_JuTrOaIh4=">
+        <h2 class="card-title">Construction</h2>
+        <p>Built by our team of professional developers, we endure the most rigorous and modern websites. Built from scratch using HTML and CSS. Only the best for you. </p>
+      </div>
+      
+    </div>
+    
+    <footer>
+      <p>Create. Develop. Design.</p>
+    </footer>
+    
+  </body>
+    
+</html>
